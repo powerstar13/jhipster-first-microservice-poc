@@ -1,0 +1,23 @@
+application {
+  config {
+    baseName FirstMicroservice
+    applicationType microservice
+    packageName backend.jshong.poc.jhipster.firstmicroservice
+    buildTool gradle
+    serverPort 8081
+    serviceDiscoveryType consul
+    authenticationType oauth2
+    databaseType no
+    devDatabaseType no
+    prodDatabaseType no
+    cacheProvider no
+    enableSwaggerCodegen true
+    messageBroker no
+    websocket no
+    clientFramework react
+    enableTranslation true
+    nativeLanguage ko
+    languages [ko, en]
+    testFrameworks [gatling]
+  }
+}
