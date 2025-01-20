@@ -1,8 +1,8 @@
 import axios from 'axios';
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-import {IUser} from 'app/shared/model/user.model';
-import {IQueryParams} from 'app/shared/reducers/reducer.utils';
+import { IUser } from 'app/shared/model/user.model';
+import { IQueryParams } from 'app/shared/reducers/reducer.utils';
 
 const initialState = {
   errorMessage: null,

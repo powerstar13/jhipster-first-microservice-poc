@@ -1,8 +1,8 @@
-import {configureStore} from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import axios from 'axios';
 import sinon from 'sinon';
 
-import userManagement, {getUsers} from 'app/shared/reducers/user-management';
+import userManagement, { getUsers } from 'app/shared/reducers/user-management';
 
 describe('User management reducer tests', () => {
   const initialState = {

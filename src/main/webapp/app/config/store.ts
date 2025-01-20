@@ -1,15 +1,6 @@
-import {
-  Action,
-  combineReducers,
-  configureStore,
-  Reducer,
-  ReducersMapObject,
-  Store,
-  ThunkAction,
-  UnknownAction
-} from '@reduxjs/toolkit';
-import {TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
-import {loadingBarMiddleware} from 'react-redux-loading-bar';
+import { Action, combineReducers, configureStore, Reducer, ReducersMapObject, Store, ThunkAction, UnknownAction } from '@reduxjs/toolkit';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { loadingBarMiddleware } from 'react-redux-loading-bar';
 
 import sharedReducers from 'app/shared/reducers';
 import errorMiddleware from './error-middleware';

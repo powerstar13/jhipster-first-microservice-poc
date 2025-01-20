@@ -1,12 +1,12 @@
 import './home.scss';
 
-import React, {useEffect} from 'react';
-import {useLocation, useNavigate} from 'react-router-dom';
-import {Translate} from 'react-jhipster';
-import {Alert, Col, Row} from 'reactstrap';
+import React, { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Translate } from 'react-jhipster';
+import { Alert, Col, Row } from 'reactstrap';
 
-import {getLoginUrl, REDIRECT_URL} from 'app/shared/util/url-utils';
-import {useAppSelector} from 'app/config/store';
+import { getLoginUrl, REDIRECT_URL } from 'app/shared/util/url-utils';
+import { useAppSelector } from 'app/config/store';
 
 export const Home = () => {
   const account = useAppSelector(state => state.authentication.account);

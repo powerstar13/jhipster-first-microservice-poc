@@ -1,7 +1,7 @@
-import {applyMiddleware, createStore} from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import * as toastify from 'react-toastify'; // synthetic default import doesn't work here due to mocking.
 import sinon from 'sinon';
-import {TranslatorContext} from 'react-jhipster';
+import { TranslatorContext } from 'react-jhipster';
 
 import notificationMiddleware from './notification-middleware';
 

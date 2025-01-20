@@ -1,9 +1,9 @@
 import axios from 'axios';
 import sinon from 'sinon';
-import {configureStore, createReducer} from '@reduxjs/toolkit';
-import {TranslatorContext} from 'react-jhipster';
+import { configureStore, createReducer } from '@reduxjs/toolkit';
+import { TranslatorContext } from 'react-jhipster';
 
-import locale, {addTranslationSourcePrefix, loaded, setLocale, updateLocale} from 'app/shared/reducers/locale';
+import locale, { addTranslationSourcePrefix, loaded, setLocale, updateLocale } from 'app/shared/reducers/locale';
 
 const defaultLocale = 'ko';
 const dispatch = jest.fn();

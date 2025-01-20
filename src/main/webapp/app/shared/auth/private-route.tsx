@@ -1,8 +1,8 @@
 import React from 'react';
-import {Navigate, PathRouteProps, useLocation} from 'react-router-dom';
-import {Translate} from 'react-jhipster';
+import { Navigate, PathRouteProps, useLocation } from 'react-router-dom';
+import { Translate } from 'react-jhipster';
 
-import {useAppSelector} from 'app/config/store';
+import { useAppSelector } from 'app/config/store';
 import ErrorBoundary from 'app/shared/error/error-boundary';
 
 interface IOwnProps extends PathRouteProps {

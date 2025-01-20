@@ -1,8 +1,8 @@
 import axios from 'axios';
 import sinon from 'sinon';
-import {configureStore} from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
-import profile, {getProfile} from './application-profile';
+import profile, { getProfile } from './application-profile';
 
 describe('Profile reducer tests', () => {
   const initialState = {

@@ -1,9 +1,13 @@
 package backend.jshong.poc.jhipster.firstmicroservice.config;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+import static org.springframework.security.oauth2.core.oidc.StandardClaimNames.PREFERRED_USERNAME;
+
 import backend.jshong.poc.jhipster.firstmicroservice.security.AuthoritiesConstants;
 import backend.jshong.poc.jhipster.firstmicroservice.security.SecurityUtils;
 import backend.jshong.poc.jhipster.firstmicroservice.security.oauth2.AudienceValidator;
 import backend.jshong.poc.jhipster.firstmicroservice.web.filter.SpaWebFilter;
+import java.util.Collection;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,11 +28,6 @@ import org.springframework.security.web.header.writers.ReferrerPolicyHeaderWrite
 import org.springframework.security.web.servlet.util.matcher.MvcRequestMatcher;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 import tech.jhipster.config.JHipsterProperties;
-
-import java.util.Collection;
-
-import static org.springframework.security.config.Customizer.withDefaults;
-import static org.springframework.security.oauth2.core.oidc.StandardClaimNames.PREFERRED_USERNAME;
 
 @Configuration
 @EnableMethodSecurity(securedEnabled = true)

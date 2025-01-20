@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
-import {serializeAxiosError} from './reducer.utils';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { serializeAxiosError } from './reducer.utils';
 
 const initialState = {
   ribbonEnv: '',

@@ -1,4 +1,4 @@
-import axios, {type AxiosError} from 'axios';
+import axios, { type AxiosError } from 'axios';
 
 const TIMEOUT = 1 * 60 * 1000;
 axios.defaults.timeout = TIMEOUT;

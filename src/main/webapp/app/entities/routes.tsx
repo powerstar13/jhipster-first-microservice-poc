@@ -2,7 +2,7 @@ import React from 'react';
 
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 
-import {combineReducers, ReducersMapObject} from '@reduxjs/toolkit';
+import { combineReducers, ReducersMapObject } from '@reduxjs/toolkit';
 
 import getStore from 'app/config/store';
 

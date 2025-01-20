@@ -1,6 +1,6 @@
 import axios from 'axios';
 import sinon from 'sinon';
-import {configureStore} from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
 import authentication, {
   authError,

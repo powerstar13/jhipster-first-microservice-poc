@@ -7,7 +7,7 @@ import {
   UnknownAction,
   ValidateSliceCaseReducers,
 } from '@reduxjs/toolkit';
-import {AxiosError, isAxiosError} from 'axios';
+import { AxiosError, isAxiosError } from 'axios';
 
 /**
  * Model for redux actions with pagination

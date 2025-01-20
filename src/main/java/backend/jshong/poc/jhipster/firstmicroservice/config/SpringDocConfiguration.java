@@ -1,10 +1,9 @@
 package backend.jshong.poc.jhipster.firstmicroservice.config;
 
+import java.util.List;
 import org.springdoc.core.customizers.ServerBaseUrlCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.List;
 
 @Configuration
 public class SpringDocConfiguration {

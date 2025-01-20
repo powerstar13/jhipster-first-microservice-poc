@@ -1,12 +1,12 @@
 import React from 'react';
-import {MemoryRouter, Route, Routes} from 'react-router';
-import {render} from '@testing-library/react';
-import {TranslatorContext} from 'react-jhipster';
+import { MemoryRouter, Route, Routes } from 'react-router';
+import { render } from '@testing-library/react';
+import { TranslatorContext } from 'react-jhipster';
 import configureStore from 'redux-mock-store';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 
-import {AUTHORITIES} from 'app/config/constants';
-import PrivateRoute, {hasAnyAuthority} from './private-route';
+import { AUTHORITIES } from 'app/config/constants';
+import PrivateRoute, { hasAnyAuthority } from './private-route';
 
 const TestComp = () => <div>Test</div>;
 

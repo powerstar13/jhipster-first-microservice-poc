@@ -1,8 +1,8 @@
 import React from 'react';
-import {render} from '@testing-library/react';
-import {MemoryRouter} from 'react-router';
+import { render } from '@testing-library/react';
+import { MemoryRouter } from 'react-router';
 
-import {AccountMenu} from './account';
+import { AccountMenu } from './account';
 
 describe('AccountMenu', () => {
   let mountedWrapper;

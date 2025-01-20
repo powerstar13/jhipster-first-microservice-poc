@@ -1,5 +1,11 @@
 package backend.jshong.poc.jhipster.firstmicroservice.web.rest;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeParseException;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 import org.hamcrest.TypeSafeMatcher;
@@ -9,13 +15,6 @@ import org.springframework.cglib.proxy.MethodProxy;
 import org.springframework.format.datetime.standard.DateTimeFormatterRegistrar;
 import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
-
-import java.lang.reflect.Method;
-import java.math.BigDecimal;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeParseException;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Utility class for testing REST controllers.

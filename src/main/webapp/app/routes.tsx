@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router';
+import { Route } from 'react-router';
 
 import Loadable from 'react-loadable';
 
@@ -10,7 +10,7 @@ import EntitiesRoutes from 'app/entities/routes';
 import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import PageNotFound from 'app/shared/error/page-not-found';
-import {AUTHORITIES} from 'app/config/constants';
+import { AUTHORITIES } from 'app/config/constants';
 
 const loading = <div>loading ...</div>;
 
