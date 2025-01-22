@@ -24,16 +24,15 @@ public class FirstResource {
     private final RestTemplate restTemplate;
 
     @GetMapping("/hello")
-    public String hello(@RequestHeader("X-XSRF-TOKEN") String token) {
+    public String hello(@RequestHeader("Authorization") String token) {
         log.info("Hello from FirstResource");
         String result = "Hello from FirstResource";
         try {
             // Second 마이크로서비스의 API를 내부 호출
-            String url = "http://localhost:8082/api/second/hello";
+            String url = "http://secondmicroservice:8082/api/second/hello";
 
             HttpHeaders headers = new HttpHeaders();
-            headers.set("accept", "*/*");
-            headers.set("X-XSRF-TOKEN", token);
+            headers.setBearerAuth(token.replace("Bearer ", ""));
 
             HttpEntity<String> entity = new HttpEntity<>(headers);
 
