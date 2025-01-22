@@ -9,7 +9,6 @@ import backend.jshong.poc.jhipster.firstmicroservice.security.oauth2.AudienceVal
 import backend.jshong.poc.jhipster.firstmicroservice.web.filter.SpaWebFilter;
 import java.util.Collection;
 import java.util.function.Supplier;
-
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -91,10 +90,17 @@ public class SecurityConfiguration {
         return http.build();
     }
 
-    private AuthorizationDecision isInternalRequest(Supplier<Authentication> authenticationSupplier, RequestAuthorizationContext requestAuthorizationContext) {
+    private AuthorizationDecision isInternalRequest(
+        Supplier<Authentication> authenticationSupplier,
+        RequestAuthorizationContext requestAuthorizationContext
+    ) {
         String remoteAddr = requestAuthorizationContext.getRequest().getRemoteAddr();
         log.info("Remote address: {}", remoteAddr);
-        boolean isInternal = remoteAddr.startsWith("192.168.") || remoteAddr.startsWith("10.") || remoteAddr.startsWith("127.0.") || remoteAddr.equals("0:0:0:0:0:0:0:1");
+        boolean isInternal =
+            remoteAddr.startsWith("192.168.") ||
+            remoteAddr.startsWith("10.") ||
+            remoteAddr.startsWith("127.0.") ||
+            remoteAddr.equals("0:0:0:0:0:0:0:1");
         return new AuthorizationDecision(isInternal);
     }
 

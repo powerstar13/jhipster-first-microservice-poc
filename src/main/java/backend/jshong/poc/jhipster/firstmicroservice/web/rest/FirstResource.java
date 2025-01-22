@@ -20,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 @RequiredArgsConstructor
 public class FirstResource {
+
     private final RestTemplate restTemplate;
 
     @GetMapping("/hello")
